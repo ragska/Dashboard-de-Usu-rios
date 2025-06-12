@@ -30,8 +30,8 @@ Para baixar as dependências, digite:
 
 Para rodar o backend, digite:
 
-npx json-server --watch db.json --port 3001
+    npx json-server --watch db.json --port 3001
 
 Para rodar o site, digite:
 
-npm run dev
+    npm run dev
