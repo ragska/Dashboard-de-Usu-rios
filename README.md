@@ -1,12 +1,37 @@
-# React + Vite
+# Dashboard de Usuários com React + Vite
+Site Web de um dashboard de usuários fakes desenvolvido com React e Vite. O objetivo é permitir o consumo de uma API falsa antes de ter um banco de dados definido.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Objetivo
+O projeto tem como finalidade praticar conceitos fundamentais do React, como:
+- Hooks (useState)
+- Estilização com CSS
+- Consumo de uma API fake
 
-Currently, two official plugins are available:
+## Funcionalidades:
+- Navegação entre páginas
+- Visualização da página atual
+- Visualização de cards de usuários
+- Navegação para tela com detalhamento de um usuário específico 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Como baixar ou clonar o projeto
 
-## Expanding the ESLint configuration
+Você deve ter o Node.js e o Git instalados
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+No GitHub:
+Vá até o repositório desejado, clique no botão verde "Code" e copie o link que aparece em HTTPS
+
+No terminal do Git Bash, digite: 
+
+    git clone https://github.com/ragska/Dashboard-de-Usu-rios.git
+
+Para baixar as dependências, digite:
+
+    npm install
+
+Para rodar o backend, digite:
+
+npx json-server --watch db.json --port 3001
+
+Para rodar o site, digite:
+
+npm run dev
