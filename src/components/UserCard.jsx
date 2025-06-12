@@ -10,11 +10,13 @@ function UserCard({user}) {
     };  
 
     //retorna a vizualização de um card (na dashboard aparece mais de um por página)
+    //recebe a estilização e ao ser clicado aciona a função pagUpdade
+    //exibe as informações do usuário como imagem, nome completo (primeiro + ultimo), email e endereço
     return(
-        {/*recebe a estilização e ao ser clicado aciona a função pagUpdade*/}
+        
         <div className="user-card" onClick={pagUpdate}>
         
-            {/*exibe as informações do usuário como imagem, nome completo (primeiro + ultimo), email e endereço*/}
+
             <img src={user.avatar} alt={`${user.firstName} avatar`} />
             <h3>{user.firstName} {user.lastName}</h3>
             <p>{user.email}</p>

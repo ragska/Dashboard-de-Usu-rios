@@ -49,9 +49,8 @@ function Dashboard() {
 
         {/*exibe somente os usuários guardados no usersAtual*/}
         {usersAtual.map((user) => (
-          {/*exibe o componente card conforme o id do usuário*/}
-          <UserCard key= {user.id} user={user} />
-        ))}
+          <UserCard key={user.id} user={user} />
+        ))} {/*exibe o componente card conforme o id do usuário*/}
       </div>
 
       <div style={{marginTop: '20px'}}>
