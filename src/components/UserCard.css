@@ -1,9 +1,10 @@
 .user-card{
-
+    
     border: 1px solid #ccc;
     border-radius: 10px;
-    padding: 16px;
+    padding: 25px;
     width: 220px;
+    height: 290px;
     text-align: center;
     margin: 10px;
     background-color: #f9f9f9;
@@ -11,6 +12,14 @@
     word-wrap: break-word;
     overflow-wrap: break-word;
 
+    transition: transform 0.2s ease;
+    cursor: pointer;
+
+}
+
+.user-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .user-card img {

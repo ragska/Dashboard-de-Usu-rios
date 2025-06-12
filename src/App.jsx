@@ -1,28 +1,15 @@
-import{ useEffect,useState } from 'react';
-import UserCard from './components/UserCard';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Dashboard from './components/Dashboard';
+import UserDetail from './components/UserDetail';
 
 function App() {
-  const [users, setUsers] = useState([]);
-
-  useEffect(() => {
-    fetch('http://localhost:3001/peoples')
-      .then((res) => res.json())
-      .then((data) => setUsers(data))
-      .catch((err) => console.error('Erro ao buscar usuários:', err));
-  }, []);
-
-  return(
-    <div className="App">
-      <h1>Dashboard de Usuários</h1>
-      <p>Total de usuários: {users.length}</p>
-      <div className="user-container">
-        {users.map((user) => (
-          <UserCard key= {user.id} user={user} />
-        ))}
-      </div>
-    </div>
-
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/user/:id" element={<UserDetail />} />
+      </Routes>
+    </Router>
   );
 }
 
